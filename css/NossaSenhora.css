@@ -178,21 +178,20 @@ main {
   cursor: pointer;
 } 
 
-/* ------------------------------------------------- Historia dos santos --------------------------------------------- */
+/* ------------------------------------------------- Historias Nossa Senhora  --------------------------------------------- */
 
-#saintsHistorys {
+#SaintMary {
   padding: 27px 80px;
 }
 
-.saintCard {
+.MarysCard {
   display: flex;
   flex-direction: row;
   gap: 20px;
   padding: 27px 0px;
 
-  .saintImg {
+  .MarysImg {
     width: 400px;
-   
     border-radius: 8px;
   }
 
