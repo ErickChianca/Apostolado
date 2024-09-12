@@ -62,39 +62,39 @@ main {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 90px;
+}
 
-  a {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--secoundary-text-color);
-    display: block;
-    transition: 0.3s;
-  }
+.menuLink {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secoundary-text-color);
+  display: block;
+  transition: 0.3s;
+}
 
-  a:hover {
-    color: #a3a3a3;
-  }
+.menuLink:hover {
+  color: #a3a3a3;
+}
 
-  hr {
-    margin: 15px 0px;
-  }
+hr {
+  margin: 15px 0px;
+}
 
-  p {
-    padding: 10px 20px;
-    color: var(--secoundary-text-color);
-  }
+.menuPray {
+  padding: 10px 20px;
+  color: var(--secoundary-text-color);
+}
 
-  .closeBtn {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 40px;
-  }
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 40px;
+}
 
-  .closeBtn:hover {
-    cursor: pointer;
-  }
+.closeBtn:hover {
+  cursor: pointer;
 }
 
 .overlay {
@@ -115,22 +115,22 @@ main {
   display: flex;
   justify-content: center;
   padding: 27px 80px;
+}
 
-  .wellcomeBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--secoundary-background-color);
-    color: var(--secoundary-text-color);
-    box-shadow: 5px 5px 10px #888;
-    border-radius: 8px;
-    padding: 40px;
-  }
+.wellcomeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  box-shadow: 5px 5px 10px #888;
+  border-radius: 8px;
+  padding: 40px;
 }
 
 /* --------------------------------------------------- Botão de Pesquisa --------------------------------------------- */
 
-.title {
+.titleAndSearch {
   display: flex;
   gap: 10px;
 }
@@ -189,30 +189,30 @@ main {
   flex-direction: row;
   gap: 20px;
   padding: 27px 0px;
+}
 
-  .MarysImg {
-    width: 400px;
-    border-radius: 8px;
-  }
+.MarysImg {
+  width: 400px;
+  border-radius: 8px;
+}
 
-  p {
-    margin-bottom: 20px;
-  }
+.apparitionDescription {
+  margin-bottom: 20px;
+}
 
-  .learnAbout {
-    background-color: var(--secoundary-background-color);
-    color: var(--secoundary-text-color);
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 0;
-    transition: 0.4s;
-  }
+.learnAbout {
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  transition: 0.4s;
+}
 
-  .learnAbout:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-  }
+.learnAbout:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 
 /* ------------------------------------------------- Footer ---------------------------------------------------------- */
@@ -223,25 +223,143 @@ footer {
   background-color: var(--secoundary-background-color);
   color: var(--secoundary-text-color);
   padding: 27px 80px;
+}
 
-  .footerLinks, .footerSocialMedia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footerLinks, .footerSocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle {
+  font-size: 18px;
+}
+
+.fastLinks, .socialMediaLinks {
+  display: flex;
+  text-decoration: none;
+  color: var(--secoundary-text-color);
+  margin: 2px;
+}
+
+.footerIcon {
+  margin-right: 5px;
+}
+
+/* --------------------------------------------- Responsividade -------------------------------------------------------- */
+
+/* ---------------------------------- 900px --------------------------------- */
+
+@media (max-width: 900px) {
+  #wellcome {
+    padding: 27px 50px;
+  }
+  
+  #SaintMary {
+    padding: 27px 50px;
   }
 
-  .footerTitle {
+  .MarysCard {
+    flex-direction: column;
+  }
+
+  .MarysImg {
+    width: 100%;
+  }
+
+  .apparitionName {
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 50px;
+    
+    .footerLinks {
+      display: none;
+    }
+  }
+}
+
+/* ------------------------------- 430px ------------------------------------- */
+
+@media (max-width: 431px) {
+  header {
+    .menuBtn {
+      left: 20px;
+      img {
+        width: 35px;
+      }
+    }
+
+    .logo {
+      width: 65px;
+    }
+  }
+
+  #wellcome {
+    padding: 20px;
+  }
+
+  .menuLink {
     font-size: 18px;
   }
 
-  a {
-    display: flex;
-    text-decoration: none;
-    color: var(--secoundary-text-color);
-    margin: 2px;
+  .menuPray {
+    font-size: 14px;
   }
 
-  .footerIcon {
-    margin-right: 5px;
+  .wellcomeBox {
+    align-items: flex-start;
+    padding: 25px;
+  }
+
+  .boxTitle {
+    font-size: 20px;
+  }
+
+  .extraText {
+    display: none;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  #SaintMary {
+    padding: 20px;
+  }
+
+  .titleAndSearch {
+    flex-direction: column;
+  }
+
+  .searchBar.expanded {
+    width: 100%;
+  }
+
+  .MarysCard {
+    padding: 20px 0px;
+    gap: 10px;
+  }
+
+  .apparitionDescription {
+    margin-bottom: 10px;
+  }
+
+  .learnAbout {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 30px 20px;
+    font-size: 14px;
+    gap: 30px;
+  }
+  
+  .footerSocialMedia {
+    align-items: flex-start;
+    .footerTitle {
+      font-size: 14px;
+    }
   }
 }

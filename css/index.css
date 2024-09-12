@@ -23,23 +23,23 @@ header {
   align-items: center;
   padding: 20px 80px;
   background-color: var(--secoundary-background-color);
+}
 
-  .menuBtn {
-    position: absolute;
-    left: 80px;
-    background-color: transparent;
-    border: 0;
-  }
+.menuBtn {
+  position: absolute;
+  left: 80px;
+  background-color: transparent;
+  border: 0;
+}
 
-  .menuBtn:hover {
-    cursor: pointer;
-  }
+.menuBtn:hover {
+  cursor: pointer;
+}
 
-  .logo {
-    width: 80px;
-    height: auto;
-    margin: 0 auto;
-  }
+.logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* ------------------------------------------------------ Main ------------------------------------------ */
@@ -62,39 +62,39 @@ main {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 90px;
+}
 
-  a {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--secoundary-text-color);
-    display: block;
-    transition: 0.3s;
-  }
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 40px;
+}
 
-  a:hover {
-    color: #a3a3a3;
-  }
+.closeBtn:hover {
+  cursor: pointer;
+}
 
-  hr {
-    margin: 15px 0px;
-  }
+.menuLink {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secoundary-text-color);
+  display: block;
+  transition: 0.3s;
+}
 
-  p {
-    padding: 10px 20px;
-    color: var(--secoundary-text-color);
-  }
+hr {
+  margin: 15px 0px;
+}
 
-  .closeBtn {
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 40px;
-  }
+.menuLink:hover {
+  color: #a3a3a3;
+}
 
-  .closeBtn:hover {
-    cursor: pointer;
-  }
+.menuPray {
+  padding: 10px 20px;
+  color: var(--secoundary-text-color);
 }
 
 .overlay {
@@ -118,50 +118,45 @@ main {
 
   div {
     width: 50%;
-    
-    p {
-      margin-bottom: 15px;
-    }
   }
+}
 
-  .imgWellcome {
-    display: flex;
-    justify-content: center;
-  }
+.imgWellcome {
+  display: flex;
+  justify-content: center;
+}
 
-  .discoverBtn {
-    background-color: var(--secoundary-background-color);
-    color: var(--secoundary-text-color);
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 0;
-    transition: 0.4s;
-  }
+.wellcomeText {
+  margin-bottom: 15px;
+}
 
-  .discoverBtn:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-  }
+.discoverBtn {
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  transition: 0.4s;
+}
+
+.discoverBtn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 
 /* --------------------------------------------------- About the Project ----------------------------------------------- */
 #aboutTheProject {
   padding: 27px 80px;
+}
 
-  h1 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
+.aboutTheProjectTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  p {
-    margin-bottom: 20px;
-  }
-
-  .rogai {
-    text-align: center;
-    margin-bottom: 0;
-  }
+.aboutTheProjectText {
+  margin-bottom: 20px;
 }
 
 /* ------------------------------------------------------ Suggestion ------------------------------------------------- */
@@ -173,26 +168,26 @@ main {
 
   div {
     width: 50%;
-
-    p {
-      margin-bottom: 15px;
-    }
   }
+}
 
-  .suggestionBtn {
-    background-color: var(--secoundary-background-color);
-    color: var(--secoundary-text-color);
-    padding: 10px 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 0;
-    transition: 0.4s;
-  }
+.suggestionText {
+  margin-bottom: 15px;
+}
 
-  .suggestionBtn:hover {
-    cursor: pointer;
-    transform: translateY(-5px);
-  }
+.suggestionBtn {
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  transition: 0.4s;
+}
+
+.suggestionBtn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 
 /* ------------------------------------------------------ Footer ------------------------------------------------------ */
@@ -203,25 +198,196 @@ footer {
   background-color: var(--secoundary-background-color);
   color: var(--secoundary-text-color);
   padding: 27px 80px;
+}
 
-  .footerLinks, .footerSocialMedia {
-    display: flex;
+.footerLinks, .footerSocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle {
+  font-size: 18px;
+}
+
+.fastLinks, .socialMediaLinks {
+  display: flex;
+  text-decoration: none;
+  color: var(--secoundary-text-color);
+  margin: 2px;
+}
+
+.footerIcon {
+  margin-right: 5px;
+}
+
+/* -------------------------------------------- Responsividade --------------------------------------------------------- */
+
+/* ------------------------------- 1024px -------------------- */
+
+@media (max-width: 1024px) {
+  /* Wellcome */
+  #wellcome {
     flex-direction: column;
-    align-items: center;
+    padding: 60px 80px;
+
+    div {
+     width: 100%;
+    }
   }
 
-  .footerTitle {
+  /* Suggestion */
+  #suggestion {
+    padding: 60px 80px;
+
+    
+    div {
+      width: 100%;
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+/* ---------------------------------- 900px ---------------------- */
+
+@media (max-width: 900px) {
+  /* Wellcome */
+  #wellcome {
+    padding: 27px 50px;
+  }
+
+  /* ATP */
+  #aboutTheProject {
+    padding: 0px 50px;
+  }
+
+  /* Suggestion */
+  #suggestion {
+    padding: 27px 50px;
+    flex-direction: column;
+
+    .suggestionImg {
+      width: 50%;
+  
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px;
+    
+    .footerLinks {
+      display: none;
+    }
+  }
+}
+
+/* ------------------------------ 430px ------------------------- */
+
+@media (max-width: 431px) {
+  /* HEADER */
+  header {
+    .menuBtn {
+      left: 20px;
+      img {
+        width: 35px;
+      }
+    }
+
+    .logo {
+      width: 65px;
+    }
+  }
+
+  /* MENU */
+  .menuLink {
     font-size: 18px;
   }
 
-  a {
-    display: flex;
-    text-decoration: none;
-    color: var(--secoundary-text-color);
-    margin: 2px;
+  .menuPray {
+    font-size: 14px;
   }
 
-  .footerIcon {
-    margin-right: 5px;
+  /* WELLCOME */
+  #wellcome {
+    padding: 20px 20px;
+  }
+
+  .wellcomeTitle {
+    font-size: 20px;
+  }
+
+  .wellcomeText {
+    font-size: 14px;
+  }
+
+  .discoverBtn {
+    font-size: 14px;
+  }
+
+  .imgWellcome {
+    padding-top: 27px;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  /* About the Project */
+  #aboutTheProject {
+    padding: 0px 20px;
+  }
+
+  .aboutTheProjectTitle {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .aboutTheProjectText {
+    font-size: 14px;
+  }
+
+  .lastText {
+    margin-bottom: 0;
+  }
+
+  /* Suggestion */
+  #suggestion {
+    padding: 27px 20px;
+  }
+
+  .suggestionTitle {
+    font-size: 20px;
+  }
+
+  .suggestionText {
+    font-size: 14px;
+  }
+
+  .suggestionBtn {
+    font-size: 14px;
+  }
+
+  .suggestionImg {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 20px;
+    font-size: 14px;
+    gap: 30px;
+  }
+  
+  .footerSocialMedia {
+    align-items: flex-start;
+    .footerTitle {
+      font-size: 14px;
+    }
   }
 }
