@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formações</title>
-    <link rel="stylesheet" href="/css/formações.css" />
-    <script src="/js/index.js" defer></script>
+    <link rel="stylesheet" href="/css/formações.css?v=0.1" />
+    <script src="/js/index.js?v=0.1" defer></script>
   </head>
   <body>
     <header id="top">
@@ -23,13 +23,13 @@
 
     <section id="sidebar" class="sidebar">
       <img src="img/x.svg" alt="Botão para fechar menu" class="closeBtn" />
-      <a href="/index.html">Inicio</a>
-      <a href="/NossaSenhora.html">Nossa Senhora</a>
-      <a href="/santos.html">História dos Santos</a>
-      <a href="/paroquia.html">Nossa Paróquia</a>
-      <a href="/feedback.html">Feedback</a>
+      <a href="/index.html" class="menuLink">Inicio</a>
+      <a href="/NossaSenhora.html" class="menuLink">Nossa Senhora</a>
+      <a href="/santos.html" class="menuLink">História dos Santos</a>
+      <a href="/paroquia.html" class="menuLink">Nossa Paróquia</a>
+      <a href="/feedback.html" class="menuLink">Feedback</a>
       <hr />
-      <p>Santo Antônio de Lisboa, rogai pro nós!</p>
+      <p class="menuPray">Santo Antônio de Lisboa, rogai pro nós!</p>
     </section>
 
     <div id="overlay" class="overlay"></div>
@@ -37,20 +37,21 @@
     <main>
       <section id="wellcome">
         <div class="wellcomeBox">
-          <h1>Formações</h1>
-          <p>
+          <h1 class="boxTitle">Formações</h1>
+          <p class="text boxText">
             Seja bem-vindo às formações online da Crisma PSAL, aqui não daremos
-            apenas formações como as de catequese. Queremos sim fazer isso, mas
-            pretendemos também falar de assuntos que entendemos ser importantes
-            para o crescimento na fé. Além disso, queremos dar atenção aos temas
-            escolhidos por vocês, então sinta-se avontade para mandar um tema na
-            página de Feedback.
+            formações como as de catequese. Mas pretendemos falar de assuntos que
+            entendemos ser importantes para o crescimento na fé. 
+            <span class="extraText">
+              Além disso, queremos dar atenção aos temas escolhidos por vocês, 
+              então sinta-se à vontade para mandar um tema na página de Feedback.
+            </span>
           </p>
         </div>
       </section>
 
       <section id="formation">
-        <div class="title">
+        <div class="titleAndSearch">
           <h1>Formações</h1>
           <div class="searchBar">
               <input type="text" placeholder="Pesquisar..." class="searchInput">
@@ -59,7 +60,6 @@
               </a>
             </div>
         </div>
-
         
         <div class="formationCard">
           <img
@@ -68,8 +68,8 @@
           class="formationImg"
           />
           <div>
-            <h2>Tudo sobre o Espírito Santo</h2>
-            <p>
+            <h2 class="formationTitle">Tudo sobre o Espírito Santo</h2>
+            <p class="text fotmationDescription"> 
               Você conhece tudo sobre o Espírito Santo? De verdade? Você
               provavelmente ja ouviu falar dos dons do Espírito Santo, mas
               sabe como Ele aje em nossas vidas ou como sabemos se o temos
@@ -88,8 +88,8 @@
           class="formationImg"
           />
           <div>
-            <h2>Qual a importância do jejum?</h2>
-            <p>
+            <h2 class="formationTitle">Qual a importância do jejum?</h2>
+            <p class="text fotmationDescription">
               Se você vem de uma família católica, quando era novo, ja deve
               ter se questionado por que fazemos jejum, principalmente na
               quaresma, não é? Bom, por mais que pareça algo ruim, fazer jejum
@@ -107,8 +107,8 @@
             class="formationImg"
           />
           <div>
-            <h2>Como tratar os escrúpulos?</h2>
-            <p>
+            <h2 class="formationTitle">Como tratar os escrúpulos?</h2>
+            <p class="text fotmationDescription">
               Escrúpulo é um grande problema que ataca diversos fiéis em todo
               o mundo. Muitas vezes podem levar as pessoas para longe de Deus,
               desistindo de sua fé. Se você é escrupuloso ou deseja ajudar
@@ -129,18 +129,18 @@
   
       <div class="footerLinks">
         <h1 class="footerTitle">Links Rápidos</h1>
-        <a href="#top">Topo</a>
-        <a href="/index.html">Página Inicial</a>
-        <a href="/NossaSenhora.html">Nossa Senhora</a>
-        <a href="/santos.html">História dos Santos</a>
-        <a href="/paroquia.html">Nossa Paróquia</a>
+        <a href="#top" class="fastLinks">Topo</a>
+        <a href="/index.html" class="fastLinks">Página Inicial</a>
+        <a href="/NossaSenhora.html" class="fastLinks">Nossa Senhora</a>
+        <a href="/santos.html" class="fastLinks">História dos Santos</a>
+        <a href="/paroquia.html" class="fastLinks">Nossa Paróquia</a>
       </div>
   
       <div class="footerSocialMedia">
         <h1 class="footerTitle">Redes Sociais</h1>
-        <a href="https://www.instagram.com/crismapsal/" target="_blank"><img class="footerIcon" src="/img/instagram.svg" alt="Ícone instagram">Instagram</a>
-        <a href="" tex><img class="footerIcon" src="/img/youtube.svg" alt="Ícone YouTube">YouTube</a>
-        <a href="" tex><img class="footerIcon" src="/img/envelope-fill.svg" alt="Ícone e-mail">E-mail</a>
+        <a href="https://www.instagram.com/crismapsal/" target="_blank" class="socialMediaLinks"><img class="footerIcon" src="/img/instagram.svg" alt="Ícone instagram">Instagram</a>
+        <a href="" tex class="socialMediaLinks"><img class="footerIcon" src="/img/youtube.svg" alt="Ícone YouTube">YouTube</a>
+        <a href="" tex class="socialMediaLinks"><img class="footerIcon" src="/img/envelope-fill.svg" alt="Ícone e-mail">E-mail</a>
       </div>
     </footer>
   </body>

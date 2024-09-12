@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crisma PSAL</title>
-  <link rel="stylesheet" href="/css/index.css">
-  <script src="/js/index.js" defer></script>
+  <link rel="stylesheet" href="/css/index.css?v=0.2">
+  <script src="/js/index.js?v=0.1" defer></script>
 </head>
 <body>
   <header id="top">
@@ -19,13 +19,13 @@
 
   <section id="sidebar" class="sidebar">
     <img src="img/x.svg" alt="Botão para fechar menu" class="closeBtn">
-    <a href="/formações.html">Formações</a>
-    <a href="/NossaSenhora.html">Nossa Senhora</a>
-    <a href="/santos.html">História dos Santos</a>
-    <a href="/paroquia.html">Nossa Paróquia</a>
-    <a href="/feedback.html">Feedback</a>
+    <a href="/formações.html" class="menuLink">Formações</a>
+    <a href="/NossaSenhora.html" class="menuLink">Nossa Senhora</a>
+    <a href="/santos.html" class="menuLink">História dos Santos</a>
+    <a href="/paroquia.html" class="menuLink">Nossa Paróquia</a>
+    <a href="/feedback.html" class="menuLink">Feedback</a>
     <hr>
-    <p>Santo Antônio de Lisboa, rogai pro nós!</p>
+    <p class="menuPray">Santo Antônio de Lisboa, rogai pro nós!</p>
   </section>
 
   <div id="overlay" class="overlay"></div>
@@ -33,8 +33,8 @@
   <main>
     <section id="wellcome">
       <div>
-        <h1>Bem-vindo ao Apostolado da Crisma PSAL!</h1>
-        <p>
+        <h1 class="wellcomeTitle">Bem-vindo ao Apostolado da Crisma PSAL!</h1>
+        <p class="wellcomeText">
           Bem-vindo ao apostolado da Paróquia Santo Antônio de Lisboa, que fica em Tambaú, João Pessoa – PB. 
           Esse apostolado foi criado, a princípio, para ajudar nossos crismandos com maior conhecimento da fé. 
           Entretanto, achamos que o esse conhecimento é algo que se deve ser passado para todas as pessoas. 
@@ -48,8 +48,8 @@
     </section>
 
     <section id="aboutTheProject">
-      <h1>Crisma da Paróquia Santo Antônio de Lisboa</h1>
-      <p>
+      <h1 class="aboutTheProjectTitle">Sobre o Nosso Projeto</h1>
+      <p class="aboutTheProjectText">
         Nosso projeto foi desenvolvido inteiramente pela equipe da Crisma PSAL, que conta com mais de 90 catequistas. 
         As formações que oferecemos aqui de maneira alguma substituem as formações presenciais. 
         Pelo contrário, nosso objetivo é abordar temas complementares, temas extras que devem ser tratados para que o crismando
@@ -59,7 +59,7 @@
         que são importantíssimos para o crescimento espiritual.
       </p>
 
-      <p>
+      <p class="aboutTheProjectText"> 
         Nossa ideia é que esse apostolado sirva como uma “Direção Espiritual”, ajudando os fiéis em seus questionamentos e problemas, 
         fazendo com que todos cresçam espiritualmente; essa “Direção Espiritual” se encontra no menu, em “Formações”. 
         Além disso, quando se fala de crescimento espiritual, conhecer sobre as aparições de Nossa Senhora e sobre a vida dos santos 
@@ -67,29 +67,26 @@
         pode-se encontrar essas páginas no menu em “Nossa Senhora” e “História dos Santos”, respectivamente.
       </p>
 
-      <p>
+      <p class="aboutTheProjectText">
         Para cumprir nossa missão, fizemos e continuamos a fazer um estudo minucioso da Bíblia, do Catecismo da Igreja Católica e 
         dos escritos dos grandes santos. Após esse estudo, produzimos vídeos e artigos que são publicados nesse site 
         e em nosso canal do Youtube para que todos possam aprender sobre sua fé.
       </p>
 
-      <p>
+      <p class="aboutTheProjectText lastText">
         Se você gostou desse projeto e acha que pode ajudar alguém que você conhece, alguém que está começando na vida católica 
         ou para alguém pode de alguma forma precisar do nosso conteúdo, pedimos para que compartilhe nosso projeto com essa pessoa. 
         Vamos juntos catequisar todo o Brasil, levando esse riquíssimo conhecimento para todas as pessoas e lugares.
       </p>
-
-      <p>- Crisma PSAL</p>
-
     </section>
 
     <section id="suggestion">
-      <div>
+      <div class="suggestionImg">
         <img src="img/undraw_respond_re_iph2.svg" alt="Imagem de perguntas e respostas" width="500px">
       </div>
       <div>
-        <h1>Como posso dar sugestões de novos vídeos?</h1>
-        <p>
+        <h1 class="suggestionTitle">Como posso dar sugestões de novos vídeos?</h1>
+        <p class="suggestionText">
           Você pode dar sugestões de vídeos ou de melhorias para o nosso site. Para isso, basta visitar a página de Feedback ou 
           clicar no botão abaixo “Dar sugestão” e então fazer sua pergunta sobre algum tema ou fazer alguma indicação. 
           As perguntas e indicações serão enviadas para o nosso e-mail, no momento em que lermos sua indicação, planejaremos algo.
@@ -108,18 +105,18 @@
 
     <div class="footerLinks">
       <h1 class="footerTitle">Links Rápidos</h1>
-      <a href="#top">Topo</a>
-      <a href="/formações.html">Formações</a>
-      <a href="/NossaSenhora.html">Nossa Senhora</a>
-      <a href="/santos.html">História dos Santos</a>
-      <a href="/paroquia.html">Nossa Paróquia</a>
+      <a href="#top" class="fastLinks">Topo</a>
+      <a href="/formações.html" class="fastLinks">Formações</a>
+      <a href="/NossaSenhora.html" class="fastLinks">Nossa Senhora</a>
+      <a href="/santos.html" class="fastLinks">História dos Santos</a>
+      <a href="/paroquia.html" class="fastLinks">Nossa Paróquia</a>
     </div>
 
     <div class="footerSocialMedia">
       <h1 class="footerTitle">Redes Sociais</h1>
-      <a href="https://www.instagram.com/crismapsal/" target="_blank"><img class="footerIcon" src="/img/instagram.svg" alt="Ícone instagram">Instagram</a>
-      <a href="" tex><img class="footerIcon" src="/img/youtube.svg" alt="Ícone YouTube">YouTube</a>
-      <a href="" tex><img class="footerIcon" src="/img/envelope-fill.svg" alt="Ícone e-mail">E-mail</a>
+      <a href="https://www.instagram.com/crismapsal/" target="_blank" class="socialMediaLinks"><img class="footerIcon" src="/img/instagram.svg" alt="Ícone instagram">Instagram</a>
+      <a href="" tex class="socialMediaLinks"><img class="footerIcon" src="/img/youtube.svg" alt="Ícone YouTube">YouTube</a>
+      <a href="" tex class="socialMediaLinks"><img class="footerIcon" src="/img/envelope-fill.svg" alt="Ícone e-mail">E-mail</a>
     </div>
   </footer>
 </body>
