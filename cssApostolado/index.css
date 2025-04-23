@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-background-color: #FEFEFA;
+  --primary-text-color: #242F40;
+  --secoundary-background-color: #242F40;
+  --secoundary-text-color: #FEFEFA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* -------------------------------------------------- HEADER ------------------------------------------------- */
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--secoundary-background-color);
+}
+
+.menuBtn {
+  position: absolute;
+  left: 80px;
+  background-color: transparent;
+  border: 0;
+}
+
+.menuBtn:hover {
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------------------ Main ------------------------------------------ */
+
+main {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+/* ---------------------------------------------------- Sidebar/Menu --------------------------------------------- */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: var(--secoundary-background-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 90px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 40px;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+
+.menuLink {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--secoundary-text-color);
+  display: block;
+  transition: 0.3s;
+}
+
+hr {
+  margin: 15px 0px;
+}
+
+.menuLink:hover {
+  color: #a3a3a3;
+}
+
+.menuPray {
+  padding: 10px 20px;
+  color: var(--secoundary-text-color);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+  transition: 0.5;
+}
+
+/* ------------------------------------------------------- Wellcome ------------------------------------------------- */
+
+#wellcome {
+  display: flex;
+  align-items: center;
+  padding: 27px 80px;
+
+  div {
+    width: 50%;
+  }
+}
+
+.imgWellcome {
+  display: flex;
+  justify-content: center;
+}
+
+.wellcomeText {
+  margin-bottom: 15px;
+}
+
+.discoverBtn {
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  transition: 0.4s;
+}
+
+.discoverBtn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+/* --------------------------------------------------- About the Project ----------------------------------------------- */
+#aboutTheProject {
+  padding: 27px 80px;
+}
+
+.aboutTheProjectTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aboutTheProjectText {
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------ Suggestion ------------------------------------------------- */
+
+#suggestion {
+  display: flex;
+  align-items: center;
+  padding: 27px 80px;
+
+  div {
+    width: 50%;
+  }
+}
+
+.suggestionText {
+  margin-bottom: 15px;
+}
+
+.suggestionBtn {
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  transition: 0.4s;
+}
+
+.suggestionBtn:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+/* ------------------------------------------------------ Footer ------------------------------------------------------ */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secoundary-background-color);
+  color: var(--secoundary-text-color);
+  padding: 27px 80px;
+}
+
+.footerLinks, .footerSocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle {
+  font-size: 18px;
+}
+
+.fastLinks, .socialMediaLinks {
+  display: flex;
+  text-decoration: none;
+  color: var(--secoundary-text-color);
+  margin: 2px;
+}
+
+.footerIcon {
+  margin-right: 5px;
+}
+
+/* -------------------------------------------- Responsividade --------------------------------------------------------- */
+
+/* ------------------------------- 1024px -------------------- */
+
+@media (max-width: 1024px) {
+  /* Wellcome */
+  #wellcome {
+    flex-direction: column;
+    padding: 60px 80px;
+
+    div {
+     width: 100%;
+    }
+  }
+
+  /* Suggestion */
+  #suggestion {
+    padding: 60px 80px;
+
+    
+    div {
+      width: 100%;
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+/* ---------------------------------- 900px ---------------------- */
+
+@media (max-width: 900px) {
+  /* Wellcome */
+  #wellcome {
+    padding: 27px 50px;
+  }
+
+  /* ATP */
+  #aboutTheProject {
+    padding: 0px 50px;
+  }
+
+  /* Suggestion */
+  #suggestion {
+    padding: 27px 50px;
+    flex-direction: column;
+
+    .suggestionImg {
+      width: 50%;
+  
+      img {
+        width: 400px;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px;
+    
+    .footerLinks {
+      display: none;
+    }
+  }
+}
+
+/* ------------------------------ 430px ------------------------- */
+
+@media (max-width: 431px) {
+  /* HEADER */
+  header {
+    .menuBtn {
+      left: 20px;
+      img {
+        width: 35px;
+      }
+    }
+
+    .logo {
+      width: 65px;
+    }
+  }
+
+  /* MENU */
+  .menuLink {
+    font-size: 18px;
+  }
+
+  .menuPray {
+    font-size: 14px;
+  }
+
+  /* WELLCOME */
+  #wellcome {
+    padding: 20px 20px;
+  }
+
+  .wellcomeTitle {
+    font-size: 20px;
+  }
+
+  .wellcomeText {
+    font-size: 14px;
+  }
+
+  .discoverBtn {
+    font-size: 14px;
+  }
+
+  .imgWellcome {
+    padding-top: 27px;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  /* About the Project */
+  #aboutTheProject {
+    padding: 0px 20px;
+  }
+
+  .aboutTheProjectTitle {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .aboutTheProjectText {
+    font-size: 14px;
+  }
+
+  .lastText {
+    margin-bottom: 0;
+  }
+
+  /* Suggestion */
+  #suggestion {
+    padding: 27px 20px;
+  }
+
+  .suggestionTitle {
+    font-size: 20px;
+  }
+
+  .suggestionText {
+    font-size: 14px;
+  }
+
+  .suggestionBtn {
+    font-size: 14px;
+  }
+
+  .suggestionImg {
+    display: none;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 20px;
+    font-size: 14px;
+    gap: 30px;
+  }
+  
+  .footerSocialMedia {
+    align-items: flex-start;
+    .footerTitle {
+      font-size: 14px;
+    }
+  }
+}
